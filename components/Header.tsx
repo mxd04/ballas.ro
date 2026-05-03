@@ -69,17 +69,17 @@ export default function Header({ onOpenMap, onOpenMenu }: HeaderProps) {
         style={{
           left: '50%',
           transform: isScrolled 
-            ? 'translateX(calc(-150% - var(--logo-offset))) scale(1)' 
+            ? 'translateX(calc(-50% - var(--logo-offset))) scale(1)' 
             : 'translateX(-50%) scale(1)',
         }}
         className={`fixed transition-all duration-[1000ms] cubic-bezier(0.16, 1, 0.3, 1) z-[110] transform-gpu
-          [--logo-offset:100px] md:[--logo-offset:450px] ${
+          [--logo-offset:140px] md:[--logo-offset:450px] ${
           isScrolled ? "top-6 md:top-6" : "top-6 md:top-8"
         }`}
       >
         <div className="relative flex items-center justify-center">
           <div className={`absolute inset-0 bg-purple-600/30 blur-[40px] rounded-full transition-opacity duration-700 ${isScrolled ? "opacity-100" : "opacity-0"}`} />
-          <h1 className={`font-logo text-7xl md:text-7xl text-purple-800 transition-all duration-700 ${isScrolled ? "opacity-0 blur-md" : "opacity-100"}`}>
+          <h1 className={`font-logo text-5xl md:text-7xl text-purple-800 transition-all duration-700 ${isScrolled ? "opacity-0 blur-md" : "opacity-100"}`}>
             Ballas
           </h1>
           <div className={`absolute inset-0 flex items-center justify-center transition-all duration-700 ${isScrolled ? "opacity-100 scale-100" : "opacity-0 scale-150 pointer-events-none"}`}>
@@ -96,7 +96,7 @@ export default function Header({ onOpenMap, onOpenMenu }: HeaderProps) {
             : 'translateX(-50%)',
         }}
         className={`fixed transition-all duration-[1000ms] cubic-bezier(0.16, 1, 0.3, 1) z-[105] flex items-center gap-1 md:gap-2 p-1 md:p-1.5 rounded-full backdrop-blur-[5px] shadow-2xl
-          [--nav-offset:100px] md:[--nav-offset:380px] ${
+          [--nav-offset:50px] md:[--nav-offset:380px] ${
           isScrolled ? "top-6 md:top-6" : "top-[100px] md:top-[120px]"
         }`}
       >
@@ -104,10 +104,10 @@ export default function Header({ onOpenMap, onOpenMenu }: HeaderProps) {
           <button
             key={idx}
             onClick={link.action}
-            className="group relative overflow-hidden px-3 py-2 md:px-5 md:py-3 rounded-full transition-all duration-500"
+            className="group relative overflow-hidden px-2 py-2 md:px-5 md:py-3 rounded-full transition-all duration-500"
           >
             <div className="absolute inset-0 bg-purple-800 -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-0" />
-            <span className="relative z-20 text-[9px] md:text-[12px] tracking-[0.2em] font-bold text-white/90 group-hover:text-white transition-colors uppercase">
+            <span className="relative z-20 text-[8px] md:text-[12px] tracking-[0.2em] font-bold text-white/90 group-hover:text-white transition-colors uppercase whitespace-nowrap">
               {link.name}
             </span>
           </button>

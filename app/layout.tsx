@@ -8,7 +8,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Ballas - Bahamas Club',
-  description: 'Bine ai venit pe site-ul nostru',
+  description: 'Ballas - Bahamas Club',
   generator: 'v0.app',
   icons: {
     icon: [

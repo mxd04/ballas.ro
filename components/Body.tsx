@@ -31,7 +31,7 @@ export default function Body() {
     { id: 1, title: "NEON NIGHT", date: "4 APR", time: "22:00", description: "Explozie de culori sub lumini UV.", image: "/after.jpg", isPast: true },
     { id: 3, title: "TECHNO TECH", date: "5 APR", time: "23:00", description: "Ritmuri underground până în zori.", image: "/galaxy.jpg", isPast: true },
     { id: 4, title: "VIP GALA", date: "17 APR", time: "20:00", description: "O seară de eleganță absolută.", image: "/clubbing.jpg", isPast: true },
-    { id: 5, title: "BLACK & WHITE", date: "09 MAI", time: "21:00", description: "Intrare si bautura graits, dresscode B&W", image: "/bw.jpg", isPast: false }
+    { id: 5, title: "BLACK & WHITE", date: "09 MAI", time: "21:00", description: "Intrare si bautura graits, dresscode B&W", image: "/bw.jpg", isPast: true }
   ]);
 
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
